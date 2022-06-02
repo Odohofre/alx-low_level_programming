@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * This is the intro function.
+ * main - This is the intro function.
+ * Return - Always (0) for sucesss
  */
 int main(void)
 
