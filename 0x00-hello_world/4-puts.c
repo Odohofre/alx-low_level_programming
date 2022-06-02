@@ -2,7 +2,9 @@
 
 /**
  * main - This is the intro function.
- * Return - Always 0 (sucesss)
+ *
+ *
+ * Return: 0 (sucesss)
  */
 int main(void)
 
