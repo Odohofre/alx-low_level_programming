@@ -2,7 +2,7 @@
 
 /**
  * main - This is the intro function.
- * Return - Always (0) for sucesss
+ * Return - Always 0 (sucesss)
  */
 int main(void)
 
