@@ -1,11 +1,9 @@
+#include "main.h"
 /**
- * print_alphabet - Prints the alphabet
- * main - This is the intro to the program
+ * main - Intro to the function
  *
- * return: 0 (success).
+ * Return: 0 (success).
  */
-void print_alphabet(void);
-
 int main(void)
 {
 	print_alphabet();
@@ -13,6 +11,9 @@ int main(void)
 	return (0);
 }
 
+/**
+ * print_alphabet - Prints the alphabet
+ */
 void print_alphabet(void)
 {
 	char ch;
