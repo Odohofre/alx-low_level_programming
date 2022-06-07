@@ -1,1 +1,3 @@
-New readme for c projects
+# alx-low_level_programming
+
+Each folder contains different principles of C.
