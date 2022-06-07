@@ -1,18 +1,8 @@
 #include "main.h"
 /**
- * main - Intro to the function
- *
- * Return: 0 (success).
- */
-int main(void)
-{
-	print_alphabet();
-
-	return (0);
-}
-
-/**
  * print_alphabet - Prints the alphabet
+ *
+ * Return: 0 (sucsess)
  */
 void print_alphabet(void)
 {
