@@ -11,6 +11,10 @@ int main(void)
 	long int sum, num3, num5;
 	int i;
 
+	sum = 0;
+	num3 = 0;
+	num5 = 0;
+
 	for (i = 0; i < 1024; i++)
 	{
 		if ((i % 3) == 0)
