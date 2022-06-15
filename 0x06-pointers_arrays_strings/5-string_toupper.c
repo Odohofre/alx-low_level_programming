@@ -8,8 +8,8 @@ char *string_toupper(char *n)
 {
 	for (int i = 0; n[i] != '\0'; i++)
 	{
-		if (('a' <= n[i]) && (n[i] <= 'z'))
-			n[i] = 'A' + (n[i] - 'a');
+		if ((n[i] >= 'a') && (n[i] <= 'z'))
+			n[i] = n[i] - 32;
 	}
 	return (n);
 }
