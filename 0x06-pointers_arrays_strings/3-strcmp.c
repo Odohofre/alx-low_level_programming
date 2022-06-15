@@ -7,7 +7,9 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	for ( ; *s1 == *s2; *s1++, *s2++)
+	int i;
+
+	for (i = 0 ; *s1 == *s2; *s1++, *s2++, i++)
 	{
 		if (*s1 == '\0')
 			return (0);
