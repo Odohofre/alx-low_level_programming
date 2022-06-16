@@ -8,6 +8,7 @@ This Project teaches:
 * How to use strings and how to manipulate them
 * Scope of variables
 ---
+## Mandatory
 
 ### [0. strcat](./0-strcat.c)
 * Write a function that concatenates two strings.
@@ -33,9 +34,22 @@ This Project teaches:
 ### [7. Mozart composed his music not for the elite, but for everybody](./7-leet.c)
 * Write a function that encodes a string into 1337.
 
+## Advance
+
 ### [8. rot13](./8-rot13.c)
 * Write a function that encodes a string using rot13.
 
+### [9. Numbers have life; they're not just symbols on paper](./101-print_number.c)
+* Write a function that prints an integer.
+
+### [10. A dream doesn't become reality through magic; it takes sweat, determination and hard work](./102-magic.c)
+* Add one line to this code, so that the program prints a[2] = 98, followed by a new line.
+
+### [11. It is the addition of strangeness to beauty that constitutes the romantic character in art](./103-infinite_add.c)
+* Write a function that adds two numbers.
+
+### [12. Noise is a buffer, more effective than cubicles or booth walls](./104-print_buffer.c)
+* Write a function that prints a buffer.
 ---
 
 ## Author
