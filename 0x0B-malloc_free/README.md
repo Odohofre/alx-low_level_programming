@@ -31,5 +31,7 @@ What you should learn from this project:
 
 ### [6. I will show you how great I am](./101-strtow.c)
 * Write a function that splits a string into words.
+---
 
-
+## Author
+* **Bright Odohofre** - [Odohofre](https://github.com/Odohofre)
