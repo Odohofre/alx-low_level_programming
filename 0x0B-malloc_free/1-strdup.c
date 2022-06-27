@@ -9,23 +9,27 @@
  */
 char *_strdup(char *str)
 {
-	int i, end;
-	char *array;
+	char *duplicate_str;
+	int i = 0, len = 0;
 
-	if (str == NULL)
+	if (str == NULL) /* validate str input */
 		return (NULL);
 
-	for (end = 0; end <= *str; end++)
+	while (*(str + i))
+		len++, i++;
+	len++; /* add null terminator to length */
+
+	duplicate_str = malloc(sizeof(char) * len); /* allocate memory */
+
+	if (duplicate_str == NULL) /* validate memory */
+		return (NULL);
+
+	i = 0;
+	while (i < len)
 	{
+		*(duplicate_str + i) = *(str + i);
+		i++;
 	}
 
-	end += 1;
-	array = malloc(sizeof(char) * end);
-
-	for (i = 0; i < end; i++)
-		array[i] = str[i];
-
-	if (array == NULL)
-		return (NULL);
-	return (array);
+	return (duplicate_str);
 }
