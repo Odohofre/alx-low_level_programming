@@ -18,16 +18,16 @@ list_t *add_node(list_t **head, const char *str)
 	if (str == NULL) /* validate input */
 		return (NULL);
 
+	new_node = malloc(sizeof(list_t));
+
+	if (!new_node)
+		return (NULL);
 
 	new_node->str = strdup(str); /* set node values */
 	new_node->len = len;
+	new_node->next = (*head);
 
-	if (head == NULL) /* set what new node points to first */
-		new_node->next = NULL;
-	else
-		new_node->next = *head;
-
-	*head = new_node; /* set head to point to new node */
+	(*head) = new_node; /* set head to point to new node */
 
 	return (new_node);
 }
