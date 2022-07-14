@@ -9,6 +9,8 @@ What you should learn from this project:
 
 ---
 
+## Mandatory
+
 ### [0. Print list](./0-print_list.c)
 
 * Write a function that prints all the elements of a list_t list.
