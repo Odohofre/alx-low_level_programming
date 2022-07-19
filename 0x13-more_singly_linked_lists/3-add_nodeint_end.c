@@ -3,13 +3,13 @@
 /**
  * add_nodeint_end - add node to end of linked list
  * @head: linked list
- * @str: data for new node
+ * @n: data for new node
  * Return: address of new element, or NULL if failed
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new_node, *tmp; /* create new node */
-	
+
 	if (!n) /* check if malloc errored */
 		return (NULL);
 
