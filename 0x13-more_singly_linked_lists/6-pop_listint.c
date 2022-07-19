@@ -7,17 +7,17 @@
  */
 int pop_listint(listint_t **head)
 {
-	int n;
+	int num;
 	listint_t *tmp;
 
 	if (*head == NULL)
 		return (0);
 
 	tmp = *head;
-	n = (*head)->n;
+	num = tmp->n;
 
 	*head = tmp->next; /* link head to next node */
 	free(tmp);
 
-	return (n);
+	return (num);
 }
