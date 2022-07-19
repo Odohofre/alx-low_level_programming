@@ -15,6 +15,7 @@ listint_t **_ra(listint_t **list, size_t size, listint_t *new)
 {
 	listint_t **newlist;
 	size_t i;
+
 	newlist = malloc(size * sizeof(listint_t *));
 	if (newlist == NULL)
 	{
@@ -27,6 +28,7 @@ listint_t **_ra(listint_t **list, size_t size, listint_t *new)
 	free(list);
 	return (newlist);
 }
+
 /**
  * free_listint_safe - frees a listint_t linked list.
  * @head: double pointer to the start of the list
@@ -37,6 +39,7 @@ size_t free_listint_safe(listint_t **head)
 	size_t i, num = 0;
 	listint_t **list = NULL;
 	listint_t *next;
+
 	if (head == NULL || *head == NULL)
 		return (num);
 	while (*head != NULL)
