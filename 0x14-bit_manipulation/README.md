@@ -41,7 +41,7 @@ What you should learn from this project:
 
 * Write a function that checks the endianness.
 
-### [7. Crackme3](./)
+### [7. Crackme3](./101-password)
 
 * Find the password for this [program](./https://github.com/holbertonschool/0x13.c).
 
