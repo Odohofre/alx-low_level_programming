@@ -61,3 +61,9 @@ What you should learn from this project:
 ### [11. crackme5](./103-keygen.c)
 
 * Write a keygen for [crackme5](https://github.com/holbertonschool/0x17.c/blob/master/crackme5).
+
+---
+
+## Author
+
+* **Bright Odohofre** - [Odohofre](https://github.com/Odohofre)
