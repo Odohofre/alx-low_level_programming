@@ -1,38 +1,38 @@
 #include "lists.h"
+#include <stdlib.h>
+
 /**
- * add_dnodeint - adds a new node at the beginning of a dlistint_t list.
- *
- * @head:pointer to head of the list
- * @n: value of new node
- * Return: address of new node or NULL if it fails
+ * add_dnodeint - add node to front of doubly linked list
+ * @head: pointer to head of list
+ * @n: node data
+ * Return: address of new node, or Null if failed
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
+	dlistint_t *new;
 
-  /* allocate node */
-  dlistint_t *new_node = malloc(sizeof(dlistint_t));
+	if (head == NULL)
+		return (NULL);
 
-  /* check if new_node is null */
-  if (new_node == NULL)
-    return (NULL);
+	/* malloc and set new node data */
+	new = malloc(sizeof(struct dlistint_s));
+	if (!new)
+		return (NULL);
+	new->n = n;
 
-  /* put in new data */
-  new_node->n = n;
+	/* account for empty linked list */
+	if (*head == NULL)
+	{
+		*head = new;
+		new->next = NULL;
+		new->prev = NULL;
+		return (new);
+	}
 
-  /* make next of new node as head and previous a NULL */
-  new_node->next = *head;
-  new_node->prev = NULL;
-
-  if (*head != NULL)
-  {
-    *head = new_node;
-    return (new_node);
-  }
-
-  /* make previous of former head point to new node*/
-  (*head)->prev = new_node;
-
-  (*head) = new_node;
-
-  return (new_node);
+	/* account for regular linked list */
+	new->next = *head;
+	new->prev = NULL;
+	(*head)->prev = new;
+	*head = new;
+	return (new);
 }

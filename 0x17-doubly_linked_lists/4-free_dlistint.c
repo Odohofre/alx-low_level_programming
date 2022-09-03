@@ -6,14 +6,14 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-  /* return if empty list */
-  if (!head)
-    return;
+	/* return if empty list */
+	if (!head)
+		return;
 
-  while (head && head->next)
-  {
-    head = head->next;
-    free(head->prev);
-  }
-  free(head);
+	while (head && head->next)
+	{
+		head = head->next;
+		free(head->prev);
+	}
+	free(head);
 }
