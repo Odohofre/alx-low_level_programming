@@ -14,16 +14,16 @@ int main()
 	scanf("%d", &secondNumber);
 
 	/* Adding two numbers */
-	sum = addition(firstNumber, secondNumber);
+	sum = add(firstNumber, secondNumber);
 
 	/* Subtracting two numbers */
-	difference = subtraction(firstNumber, secondNumber);
+	difference = sub(firstNumber, secondNumber);
 
 	/* Multiplying two numbers*/
-	product = multiplication(firstNumber, secondNumber);
+	product = mul(firstNumber, secondNumber);
 
 	/* Dividing two numbers */
-	quotient = division(firstNumber, secondNumber);
+	quotient = div(firstNumber, secondNumber);
 
 	/* Remainder when firstNumber is divided by secondNumber*/
 	modul = mod(firstNumber, secondNumber);
@@ -40,7 +40,7 @@ int main()
 /*
 * Function to add two numbers
 */
-int addition(int num1, int num2){
+int add(int num1, int num2){
     int sum;
     sum = num1 + num2;
     return sum;
@@ -48,7 +48,7 @@ int addition(int num1, int num2){
 /*
 * Function to subtract two numbers
 */
-int subtraction(int num1, int num2){
+int sub(int num1, int num2){
     int difference;
     difference = num1 - num2;
     return difference;
@@ -57,7 +57,7 @@ int subtraction(int num1, int num2){
 /*
 * Function to multiply two numbers
 */
-int multiplication(int num1, int num2){
+int mul(int num1, int num2){
     int product;
     product = num1 * num2;
     return product;
@@ -66,7 +66,7 @@ int multiplication(int num1, int num2){
 /*
 * Function to divide two numbers
 */
-float division(int num1, int num2){
+float div(int num1, int num2){
     float quotient;
     quotient = (float)num1 / num2;
     return quotient;
