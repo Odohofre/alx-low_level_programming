@@ -21,7 +21,7 @@ What you should learn from this project:
 
 * Create a script that creates a dynamic library called **liball.so** from all the **.c** files that are in the current directory.
 
-# Advance
+## Advance
 
 ### [2. Let's call C functions from Python](./100-operations.so)
 
